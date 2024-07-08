@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Frontend Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-popup" class="popup">
+        <video autoplay muted loop id="background-video">
+            <source src="my-video-url.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="popup-content">
+            <h1>Welcome to Online Frontend Simulator</h1>
+            <p>Made by | SUPRAKASH ROY</p>
+            <button id="close-popup">Start</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Online Frontend Simulator</h1>
+            <button id="theme-toggle">🌙</button>
+        </div>
+        <div class="editor">
+            <div class="code-container">
+                <h2>HTML</h2>
+                <textarea id="html-code" placeholder="Write your HTML code here"></textarea>
+            </div>
+            <div class="code-container">
+                <h2>CSS</h2>
+                <textarea id="css-code" placeholder="Write your CSS code here"></textarea>
+            </div>
+        </div>
+        <div class="output">
+            <h2>DISPLAY</h2>
+            <iframe id="output-frame"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
